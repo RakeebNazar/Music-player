@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="1400.0" styleClass="songs" stylesheets="@../Css.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Cell">
+   <children>
+      <Label fx:id="song" contentDisplay="RIGHT" graphicTextGap="20.0" prefHeight="38.0" prefWidth="294.0" styleClass="text" stylesheets="@../Css.css" textAlignment="CENTER" textFill="#dacccc">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+      <JFXButton fx:id="button" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="41.0" ripplerFill="WHITE" styleClass="playButton" stylesheets="@../Css.css" visible="false">
+         <graphic>
+            <FontAwesomeIcon fx:id="playPause" glyphName="PLAY" selectionFill="BLACK" size="1.3em" stroke="BLACK" strokeType="INSIDE" styleClass="playLogo" text="" wrappingWidth="11.371513366699219" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="add" contentDisplay="GRAPHIC_ONLY" onContextMenuRequested="#action" prefHeight="38.0" prefWidth="41.0" styleClass="playButton" stylesheets="@../Css.css" text="Button">
+         <graphic>
+            <FontAwesomeIcon glyphName="PLUS" size="1.3em" />
+         </graphic>
+      </JFXButton>
+      <AnchorPane prefHeight="38.0" prefWidth="10.0" />
+      <Label fx:id="singer" prefHeight="39.0" prefWidth="194.0" styleClass="text" textAlignment="CENTER" textFill="#dacccc">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label fx:id="album" prefHeight="39.0" prefWidth="194.0" styleClass="text" textAlignment="CENTER" textFill="#dacccc">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label fx:id="time" prefHeight="39.0" prefWidth="194.0" styleClass="text" textAlignment="CENTER" textFill="#dacccc">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+   </children>
+</HBox>

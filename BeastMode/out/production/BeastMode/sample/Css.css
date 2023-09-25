@@ -1,0 +1,214 @@
+.songs {
+  -fx-background-color:transparent;
+}
+
+.songs:hover {
+  -fx-background-color:#464545;
+}
+
+
+.musicButton:hover, .recentPlays:hover, .playList:hover, .newPlayList:hover, .previousNext:hover, .play:hover, .minimize:hover {                                    /*in java code there is a styling for music button's border when its clicked, even after that inline styling this hover code works(but if we style the same styled elemnt(border)(inline) in this hover, thhis(hover) code wont work even any other styling in the hover wont work)*/
+  -fx-background-color:#464545;
+
+}
+
+.close:hover {
+    -fx-background-color:red;
+}
+
+
+.playLists:hover{
+
+         -fx-background-color:#464545;
+}
+
+.playLists{
+         -fx-background-color:black;
+         -fx-text-fill:white
+}
+
+
+
+
+
+
+
+.songs:hover .playButton{
+    visibility: visible;
+}
+
+
+
+.songs:hover .text{
+    -fx-text-fill:white;
+}
+
+.playButton:hover {
+        -fx-background-color:#535252;
+}
+
+
+/*scrollpane always have a background color of gray..inorder change that we need this code*/
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+.scroll-pane {
+   -fx-background-color: transparent;
+}
+
+
+
+
+/*volume slider styling*/
+.jfx-slider  > .track {                         /*no need to mention this class .jfxSlider to the slider node anywhere... becoz its the default class for every sliders... but if we want to have a slider with its own styling other than common styling for sliders, we can give seperate class name for that slider*/
+       -fx-background-color: #dacccc;           /*slider track means the bar color*/
+ }
+
+ .jfx-slider > .thumb {                        /*thumb means slider's round*/
+
+      -fx-background-color: #ff7043;
+ }
+
+ .jfx-slider > .colored-track {                /*.colored track means filled bar*/
+      -fx-background-color: #ff7043;
+ }
+
+ /* Styling the animated thumb */              /*the */
+ .jfx-slider > .animated-thumb {
+      -fx-background-color: #ff7043;
+ }
+
+ /* Styling the slider value text inside animated thumb */
+ .volume-slider .slider-value {
+      -fx-stroke: red;
+ }
+
+
+/*Styling the timeSlider*/
+.timeSlider .track {
+    -fx-background-color: #dacccc ;
+    -fx-padding: 0.1em; /* 2.5 */
+}
+
+.timeSlider .colored-track {                /*.colored track means filled bar*/
+      -fx-background-color: white;
+ }
+
+ /* Styling the animated thumb */              /*the */
+.timeSlider > .animated-thumb {
+   -fx-background-color: null;
+}
+
+.timeSlider .slider-value {
+    -fx-fill:null;
+    -fx-stroke: null;
+}
+
+.timeSlider > .thumb {                        /*thumb means slider's round*/
+
+      -fx-background-color: #dacccc;
+
+ }
+
+
+
+/*Styling the scrollbar*/       /*.Myscrollpane(id of pane)  .scroll-bar(these arwe default values for scroll bar in css)*/   /*https://blog.ngopal.com.np/2012/07/11/customize-scrollbar-via-css/*/
+
+.MyScrollPane .scroll-bar:vertical .track{              /*track means the background bar*/
+    -fx-background-color :black;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+
+.MyScrollPane .scroll-bar:vertical .increment-button ,
+.MyScrollPane .scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+
+.MyScrollPane .scroll-bar .increment-arrow,
+.MyScrollPane .scroll-bar .decrement-arrow{
+-fx-shape : " ";
+-fx-padding :0.15em 0.0;
+}
+
+.MyScrollPane .scroll-bar:vertical .increment-arrow,
+.MyScrollPane .scroll-bar:vertical .decrement-arrow{
+-fx-shape : " ";
+-fx-padding :0.0 0.15em;
+}
+
+
+.MyScrollPane .scroll-bar:vertical .thumb {             /*thumb means the inside bar*/
+    -fx-background-color :derive(#4D4C4F,10.0%);
+    -fx-background-insets : 5.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+
+
+.MyScrollPane .scroll-bar .thumb:hover{
+    -fx-background-color :#868686;
+    -fx-background-insets : 3.0, 0.0, 0.0;
+
+}
+
+.MyScrollPane .scroll-bar .thumb:pressed{
+    -fx-background-color: #b1b0b0;
+    -fx-background-insets : 3.0, 0.0, 0.0;
+}
+
+
+
+/*playList create fxml style*/
+
+.playListName{
+    -fx-background-radius: 0;
+}
+
+.playListCreate{
+   -fx-border-color : #455a64;
+}
+
+.playListCreate:hover{
+
+   -fx-background-color: #464545;
+}
+
+.playListCancel{
+
+   -fx-text-fill:white;
+}
+
+.playListCancel:hover{
+
+   -fx-text-fill: #455a64;
+}
+
+
+/*context menu style*/
+.context-menu {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+  -fx-border-color : #9f9b9b;
+
+
+}
+
+.menu-item  {
+  -fx-background-color: black;
+
+}
+
+.menu-item .label{
+  -fx-text-fill: white;
+  -fx-font-size: 14px;
+}
+
+.menu-item:hover  {
+  -fx-background-color: #464545;
+}

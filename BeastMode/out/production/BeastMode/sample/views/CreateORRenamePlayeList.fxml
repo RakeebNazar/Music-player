@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="352.0" prefWidth="431.0" style="-fx-background-color: #212121#212121; -fx-border-color: #455a64;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.CreateORRenamePlayList">
+   <children>
+      <JFXButton fx:id="createOrRenameButton" layoutX="100.0" layoutY="210.0" onAction="#createORRenameThePlayList" prefHeight="42.0" prefWidth="232.0" styleClass="playListCreate" stylesheets="@../Css.css" text="Create Playlist" textFill="WHITE" />
+      <JFXButton layoutX="176.0" layoutY="259.0" onAction="#playListCancel" prefHeight="42.0" prefWidth="80.0" styleClass="playListCancel" stylesheets="@../Css.css" text="Cancel" textFill="WHITE" />
+      <JFXTextField fx:id="playListName" focusColor="#455a64" layoutX="36.0" layoutY="73.0" prefHeight="51.0" prefWidth="359.0" style="-fx-background-color: white;" styleClass="playListName" stylesheets="@../Css.css">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" top="7.0" />
+         </padding>
+      </JFXTextField>
+   </children>
+</AnchorPane>

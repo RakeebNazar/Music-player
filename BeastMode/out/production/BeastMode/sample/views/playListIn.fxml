@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.text.Font?>
+
+<JFXButton fx:id="btn" alignment="TOP_LEFT" onMouseEntered="#action" prefHeight="42.0" prefWidth="196.0" styleClass="playLists" stylesheets="@../Css.css" text="Button" textFill="WHITE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.playListIn">
+   <padding>
+      <Insets bottom="15.0" left="50.0" top="12.0" />
+   </padding>
+   <font>
+      <Font name="Bookshelf Symbol 7" size="15.0" />
+   </font>
+   <contextMenu>
+      <ContextMenu>
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#renamePlaylist" text="Rename" />
+            <MenuItem fx:id="delete211" mnemonicParsing="false" onAction="#playPlayList" text="Play" />
+            <MenuItem fx:id="delete21" mnemonicParsing="false" onAction="#deletePlaylist" text="Delete" />
+        </items>
+      </ContextMenu>
+   </contextMenu>
+</JFXButton>
